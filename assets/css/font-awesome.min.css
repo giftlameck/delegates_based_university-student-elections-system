@@ -1,0 +1,27 @@
+/*!
+ * Font Awesome 4.7.0
+ */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-dashboard:before { content: "\f0e4"; }
+.fa-file-text:before { content: "\f15c"; }
+.fa-book:before { content: "\f02d"; }
+.fa-calendar:before { content: "\f073"; }
+.fa-bar-chart:before { content: "\f080"; }
+.fa-line-chart:before { content: "\f201"; }
+.fa-certificate:before { content: "\f0a3"; }
+.fa-users:before { content: "\f0c0"; }
+.fa-clock-o:before { content: "\f017"; }
+.fa-sign-out:before { content: "\f08b"; } 

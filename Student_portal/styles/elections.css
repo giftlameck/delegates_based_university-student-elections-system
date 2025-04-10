@@ -1,0 +1,59 @@
+/* styles/styles.css */
+
+/* Existing styles (assuming some are already here) */
+.section-card {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #007bff;
+    background-color: #f8f9fa;
+}
+
+.section-card h5 {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.section-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section-card ul li {
+    padding: 5px 0;
+}
+
+/* New styles for the image and layout */
+#default-image {
+    background-image: url('../assets/images/image.jpg'); /* Adjust the relative path based on your folder structure */
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 200px); /* Adjust based on header/footer height */
+    width: 100%;
+    display: block; /* Visible by default */
+}
+
+/* Hide the image when content is loaded */
+.content-loaded #default-image {
+    display: none;
+}
+
+/* Ensure the container doesn’t overlap with the footer */
+.container {
+    min-height: calc(100vh - 100px); /* Adjust for footer height */
+    padding-bottom: 20px; /* Extra padding at the bottom */
+}
+
+/* Style for the right column */
+.col-md-9 {
+    position: relative;
+    padding-left: 15px;
+}
+
+/* Footer styling to ensure it stays at the bottom */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}

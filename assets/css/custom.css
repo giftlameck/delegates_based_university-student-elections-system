@@ -1,0 +1,124 @@
+/* Custom Icons using Unicode characters instead of Font Awesome */
+.icon {
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    text-align: center;
+    width: 1.25em;
+}
+
+.icon-dashboard:before { content: "📊"; }
+.icon-file:before { content: "📄"; }
+.icon-book:before { content: "📚"; }
+.icon-calendar:before { content: "📅"; }
+.icon-chart:before { content: "📈"; }
+.icon-certificate:before { content: "🎓"; }
+.icon-users:before { content: "👥"; }
+.icon-clock:before { content: "⏰"; }
+.icon-logout:before { content: "↪"; }
+
+/* Custom Dashboard Styles */
+.stats-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.stats-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.quick-action-btn {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #333;
+}
+
+.quick-action-btn:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: #333;
+}
+
+.quick-action-btn .icon {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #e0e0e0;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 25px;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+}
+
+.timeline-content {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stats-card {
+        margin-bottom: 20px;
+    }
+    
+    .quick-action-btn {
+        margin-bottom: 15px;
+    }
+} 

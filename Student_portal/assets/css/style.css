@@ -1,0 +1,43 @@
+
+/* Custom styles for the election system */
+.election-card {
+    transition: transform 0.3s ease;
+}
+
+.election-card:hover {
+    transform: translateY(-5px);
+}
+
+.rating-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.rating-group input[type='radio'] {
+    display: none;
+}
+
+.rating-group label {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.rating-group input[type='radio']:checked + label {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.rating-labels {
+    display: flex;
+    justify-content: space-between;
+    color: #6c757d;
+    font-size: 0.875rem;
+}
